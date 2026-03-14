@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #020617;
+  color: #f8fafc;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Selection */
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #f8fafc;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-radius: 16px;
+}
+
+.glass-card-hover {
+  transition: all 0.3s ease;
+}
+
+.glass-card-hover:hover {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #f8fafc 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow Effects */
+.glow-indigo {
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
+}
+
+.glow-purple {
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.3);
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply px-6 py-3 bg-indigo-500 text-white rounded-full font-medium transition-all duration-300;
+}
+
+.btn-primary:hover {
+  @apply bg-indigo-600 shadow-lg;
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.4);
+}
+
+.btn-outline {
+  @apply px-6 py-3 border border-slate-600 text-slate-300 rounded-full font-medium transition-all duration-300;
+}
+
+.btn-outline:hover {
+  @apply border-indigo-500 text-indigo-400 bg-indigo-500/10;
+}
+
+/* Tech Pill */
+.tech-pill {
+  @apply px-3 py-1 text-xs font-mono rounded-full bg-slate-800/80 text-slate-400 border border-slate-700;
+}
+
+/* Section Container */
+.section-container {
+  @apply px-6 md:px-12 lg:px-24 py-16 md:py-24;
+}
+
+/* Section Title */
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-white mb-4;
+  font-family: 'Outfit', sans-serif;
+}
+
+.section-subtitle {
+  @apply text-slate-400 text-lg max-w-2xl;
+}
+
+/* Input Styles */
+.input-field {
+  @apply w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-slate-500 transition-all duration-300;
+}
+
+.input-field:focus {
+  @apply outline-none border-indigo-500 ring-2 ring-indigo-500/20;
+}
+
+/* Timeline */
+.timeline-line {
+  @apply absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 via-purple-500 to-slate-800;
+}
+
+.timeline-dot {
+  @apply absolute left-2 w-4 h-4 rounded-full bg-indigo-500 border-4 border-slate-950 z-10;
+}
+
+/* Animate on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
