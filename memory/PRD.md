@@ -81,9 +81,9 @@ Build a modern, fully responsive portfolio website with:
 - [ ] Improve toast notification visibility
 
 ### P2 (Medium Priority)
+- [x] Project details page/modal with full information
 - [ ] Add blog section
 - [ ] Theme toggle (light/dark)
-- [ ] Project details page/modal
 - [ ] Add more mini projects to GitHub
 
 ### P3 (Nice to Have)
