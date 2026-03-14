@@ -106,6 +106,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
+            data-testid="mobile-menu"
             className="md:hidden bg-slate-950/95 backdrop-blur-xl border-b border-slate-800/50"
           >
             <div className="px-6 py-4 space-y-2">

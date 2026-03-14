@@ -5,9 +5,9 @@ import { Github, Linkedin, Code2, Download, ArrowRight, Mail } from 'lucide-reac
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/GauravAthode', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/gaurav-athode-6b435a289', label: 'LinkedIn' },
-    { icon: Code2, href: 'https://leetcode.com/u/GauravAthode/', label: 'LeetCode' },
+    { icon: Github, href: 'https://github.com/GauravAthode', label: 'github' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/gaurav-athode-6b435a289', label: 'linkedin' },
+    { icon: Code2, href: 'https://leetcode.com/u/GauravAthode/', label: 'leetcode' },
   ];
 
   const scrollToSection = (sectionId) => {
