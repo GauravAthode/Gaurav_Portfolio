@@ -6,6 +6,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import AdminDashboard from './components/AdminDashboard';
 
 // Sections
 import HeroSection from './sections/HeroSection';
@@ -47,6 +48,7 @@ const LoadingScreen = () => (
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [showAdmin, setShowAdmin] = useState(false);
 
   useEffect(() => {
     // Simulate loading time
@@ -57,10 +59,29 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Secret key combo to open admin (Ctrl+Shift+A)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.ctrlKey && e.shiftKey && e.key === 'A') {
+        e.preventDefault();
+        setShowAdmin(true);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div className="App bg-slate-950 min-h-screen">
       <AnimatePresence mode="wait">
         {isLoading && <LoadingScreen key="loading" />}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {showAdmin && (
+          <AdminDashboard onClose={() => setShowAdmin(false)} />
+        )}
       </AnimatePresence>
 
       <AnimatePresence>
