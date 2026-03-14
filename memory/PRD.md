@@ -76,8 +76,8 @@ Build a modern, fully responsive portfolio website with:
 - [x] Resume download
 
 ### P1 (High Priority)
-- [ ] Add actual Resend API key for email notifications
-- [ ] Add admin dashboard for contact messages
+- [x] Add admin dashboard for contact messages (Ctrl+Shift+A to access)
+- [ ] Add Resend API key for email notifications (optional - user skipped)
 - [ ] Improve toast notification visibility
 
 ### P2 (Medium Priority)
