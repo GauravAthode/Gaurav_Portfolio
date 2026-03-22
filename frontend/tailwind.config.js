@@ -5,6 +5,7 @@ module.exports = {
     "./public/index.html"
   ],
   theme: {
+    
     extend: {
       fontFamily: {
         'outfit': ['Outfit', 'sans-serif'],
