@@ -3,21 +3,21 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './App.css';
 
 // Components
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
-import AdminDashboard from './components/AdminDashboard';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
+import AdminDashboard from './components/AdminDashboard.jsx';
 
 // Sections
-import HeroSection from './sections/HeroSection';
-import AboutSection from './sections/AboutSection';
-import SkillsSection from './sections/SkillsSection';
-import ExperienceSection from './sections/ExperienceSection';
-import ProjectsSection from './sections/ProjectsSection';
-import MiniProjectsSection from './sections/MiniProjectsSection';
-import GitHubSection from './sections/GitHubSection';
-import ResumeSection from './sections/ResumeSection';
-import ContactSection from './sections/ContactSection';
+import HeroSection from './sections/HeroSection.jsx';
+import AboutSection from './sections/AboutSection.jsx';
+import SkillsSection from './sections/SkillsSection.jsx';
+import ExperienceSection from './sections/ExperienceSection.jsx';
+import ProjectsSection from './sections/ProjectsSection.jsx';
+import MiniProjectsSection from './sections/MiniProjectsSection.jsx';
+import GitHubSection from './sections/GitHubSection.jsx';
+import ResumeSection from './sections/ResumeSection.jsx';
+import ContactSection from './sections/ContactSection.jsx';
 
 // Loading Screen Component
 const LoadingScreen = () => (

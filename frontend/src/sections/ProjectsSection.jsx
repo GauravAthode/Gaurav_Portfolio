@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, Calendar, Eye } from 'lucide-react';
-import ProjectModal from '../components/ProjectModal';
+import ProjectModal from '../components/ProjectModal.jsx';
 
 const featuredProjects = [
   {
