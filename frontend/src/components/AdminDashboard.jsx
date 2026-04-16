@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, Calendar, Eye, EyeOff, ArrowLeft, Trash2, RefreshCw, User, MessageSquare } from 'lucide-react';
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_BACKEND_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 const AdminDashboard = ({ onClose }) => {
   const [messages, setMessages] = useState([]);

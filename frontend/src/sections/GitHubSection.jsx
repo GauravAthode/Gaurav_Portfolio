@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Github, Star, Users, Code2, ExternalLink, Award } from 'lucide-react';
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_BACKEND_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 const GitHubSection = () => {
   const [stats, setStats] = useState(null);

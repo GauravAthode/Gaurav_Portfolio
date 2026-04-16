@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Github, Star, GitFork, ExternalLink, Code2, Filter } from 'lucide-react';
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_BACKEND_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 // Featured project names to exclude (already shown in main projects)
 const excludedRepos = ['VoltPath', 'Cravings', 'car-rental-system'];

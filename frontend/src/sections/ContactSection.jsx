@@ -4,7 +4,7 @@ import { Send, Mail, Phone, MapPin, Github, Linkedin, Loader2 } from 'lucide-rea
 import { Toaster, toast } from 'sonner';
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_BACKEND_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, Calendar, Eye } from 'lucide-react';
 import ProjectModal from '../components/ProjectModal.jsx';
+import voltPath from '../asset/voltPath.png';
 
 const featuredProjects = [
   {
@@ -14,7 +15,7 @@ const featuredProjects = [
 The platform integrates multiple external APIs to provide real-time data on charging stations, optimal routes considering EV range limitations, and weather conditions that might affect battery performance. Users can plan their journeys with confidence, knowing exactly where they'll need to charge and how long each segment will take.
 
 Built with a modern tech stack, VoltPath demonstrates proficiency in full-stack development, API integration, and user-centric design. The application features responsive design, secure authentication, and an intuitive interface that makes complex route planning simple.`,
-    image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&auto=format&fit=crop&q=80',
+    image: voltPath,
     technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Tailwind CSS', 'Leaflet', 'REST APIs', 'JWT'],
     features: [
       'Optimized EV route planning with range calculation',
@@ -32,7 +33,7 @@ Built with a modern tech stack, VoltPath demonstrates proficiency in full-stack 
       'Built secure authentication system with both Google OAuth and traditional JWT-based login',
     ],
     github: 'https://github.com/GauravAthode/VoltPath',
-    live: 'https://voltpath.vercel.app/',
+    live: 'https://volt-path.vercel.app/',
     duration: 'Jan 2026 – Present',
     color: 'indigo',
   },
