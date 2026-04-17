@@ -42,7 +42,7 @@ const ResumeSection = () => {
           {/* Title */}
           <h3 className="text-2xl font-semibold text-white mb-2">Gaurav Athode</h3>
           <p className="text-indigo-400 font-medium mb-2">Full Stack Developer Resume</p>
-          <p className="text-slate-500 text-sm mb-8">Updated January 2026</p>
+          <p className="text-slate-500 text-sm mb-8">Updated March 2026</p>
 
           {/* Highlights */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

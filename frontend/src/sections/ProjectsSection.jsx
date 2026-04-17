@@ -34,7 +34,7 @@ Built with a modern tech stack, VoltPath demonstrates proficiency in full-stack 
     ],
     github: 'https://github.com/GauravAthode/VoltPath',
     live: 'https://volt-path.vercel.app/',
-    duration: 'Jan 2026 – Present',
+    duration: 'Jan 2026 – March 2026',
     color: 'indigo',
   },
   {
