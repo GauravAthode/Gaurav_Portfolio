@@ -83,6 +83,7 @@ This project showcases proficiency in Java, understanding of OOP concepts like i
     technologies: ['Java', 'OOP', 'Data Structures', 'File I/O', 'Collections Framework'],
     features: [
       'Complete car inventory management',
+      
       'Customer registration and management',
       'Booking and reservation system',
       'Rental and return processing',
