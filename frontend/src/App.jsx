@@ -15,7 +15,7 @@ import SkillsSection from './sections/SkillsSection.jsx';
 import ExperienceSection from './sections/ExperienceSection.jsx';
 import ProjectsSection from './sections/ProjectsSection.jsx';
 import MiniProjectsSection from './sections/MiniProjectsSection.jsx';
-import GitHubSection from './sections/GitHubSection.jsx';
+// import GitHubSection from './sections/GitHubSection.jsx';
 import ResumeSection from './sections/ResumeSection.jsx';
 import ContactSection from './sections/ContactSection.jsx';
 
@@ -100,7 +100,7 @@ function App() {
               <ExperienceSection />
               <ProjectsSection />
               <MiniProjectsSection />
-              <GitHubSection />
+              
               <ResumeSection />
               <ContactSection />
             </main>
